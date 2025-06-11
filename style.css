@@ -10,11 +10,11 @@ body {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  padding: 0 20px; /* adjust side padding as desired */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
-
 h1 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -51,6 +51,7 @@ h1 {
 }
 
 #result-container {
+  width: 100%;
   border: 1px solid #ddd;
   background: white;
   border-radius: 4px;
@@ -86,6 +87,7 @@ h1 {
   background: #e1e1e1;
 }
 
+/* Footer stays full width */
 .footer {
   text-align: center;
   font-size: 0.9rem;
