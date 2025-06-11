@@ -52,10 +52,10 @@ h1 {
 
 #result-container {
   width: 100%;
+  padding: 1rem;
   border: 1px solid #ddd;
   background: white;
   border-radius: 4px;
-  padding: 1rem;
   min-height: 50px;
   overflow-x: auto;
   white-space: normal;
