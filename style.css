@@ -1,11 +1,11 @@
-/* Minimalist, responsive layout */
 body {
   margin: 0;
   font-family: sans-serif;
   background: #f9f9f9;
   color: #333;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -57,12 +57,36 @@ h1 {
   border-radius: 4px;
   padding: 1rem;
   min-height: 50px;
+  overflow-x: auto;
+  white-space: normal;
 }
 
 #result {
-  /* MathJax will inject SVG here */
+  font-size: 1.5em;
   word-wrap: break-word;
+  white-space: normal;
 }
+
+#font-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+#font-controls button {
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#font-controls button:hover {
+  background: #e1e1e1;
+}
+
 .footer {
   text-align: center;
   margin-top: 2rem;
