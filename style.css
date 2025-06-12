@@ -56,20 +56,20 @@ h1 {
 
 #result-container {
   width: 100%;
-  max-width: 100%;
   padding: 1rem;
   border: 1px solid #ddd;
   background: white;
   border-radius: 4px;
   min-height: 50px;
   overflow-x: auto;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 #result {
   font-size: 1.5em;
   word-wrap: break-word;
   white-space: normal;
+  display: inline-block; 
 }
 
 #font-controls {
@@ -108,5 +108,5 @@ mjx-container[jax="SVG"],
 #result svg {
   max-width: 100% !important;
   height: auto;
-  display: block;
+  display: inline-block; 
 }
