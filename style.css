@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: sans-serif;
@@ -14,6 +17,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 h1 {
   margin-bottom: 1rem;
@@ -52,6 +56,7 @@ h1 {
 
 #result-container {
   width: 100%;
+  max-width: 100%;
   padding: 1rem;
   border: 1px solid #ddd;
   background: white;
@@ -96,4 +101,16 @@ h1 {
   border-top: 1px solid #e0e0e0;
   margin-top: auto;
   width: 100%;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+mjx-container[jax="SVG"],
+#result svg {
+  max-width: 100% !important;
+  height: auto;
+  display: block;
 }
