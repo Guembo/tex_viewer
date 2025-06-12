@@ -103,11 +103,7 @@ h1 {
   width: 100%;
 }
 
-img, svg {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 mjx-container[jax="SVG"],
 #result svg {
   max-width: 100% !important;
